@@ -1,7 +1,7 @@
 {
   "name": "crowdfunding-product-page",
   "version": "0.1.0",
-  "homepage": "https://github.com/SebastianJakubowski95/Crowdfunding-product-page.git",
+  "homepage": "https://SebastianJakubowski95.github.io/Crowdfunding-product-page",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
