@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.list-of-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

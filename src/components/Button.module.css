@@ -1,0 +1,79 @@
+.btn-radio {
+  height: 1.5rem !important ;
+  width: 1.5rem !important;
+  border-radius: 50%;
+  background-color: var(--white);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  top: 0.4375rem;
+}
+.radio__active {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--green-dark);
+  border-radius: 50%;
+}
+
+.btn-regular {
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: none;
+  color: var(--white);
+  font-family: "Commissioner", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.btn-regular:not(.disabled) {
+  background-color: var(--green-light);
+  transition: scale 250ms ease-out;
+}
+.btn-regular:not(.disabled):hover {
+  background-color: var(--green-dark);
+  scale: 1.05;
+}
+
+.large {
+  width: 12.75rem;
+  height: 3.25rem;
+}
+.medium {
+  width: 9.8125rem;
+  height: 2.875rem;
+}
+.small {
+  width: 6.1875rem;
+  height: 2.875rem;
+}
+
+.btn-regular.disabled {
+  background-color: #cbcbcb;
+  cursor: not-allowed;
+}
+.btn-radio.disabled {
+  cursor: not-allowed;
+  border: 1px solid;
+  border-color: var(--grey-light);
+}
+
+.border-not__active {
+  border: 2px solid;
+  border-color: var(--grey-dark);
+}
+.border-active {
+  border: 2px solid;
+  border-color: var(--green-dark);
+}
+
+.btnParagraph {
+  color: var(--white);
+  font-family: "Commissioner", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}

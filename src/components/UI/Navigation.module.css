@@ -1,0 +1,112 @@
+.section {
+  position: relative;
+}
+.section > img {
+  width: 100vw;
+}
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 4rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.logo {
+  position: relative;
+  z-index: 100;
+}
+
+.main img:not(.logo) {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+ul li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+.navigation-large .ul {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.navigation-large li a {
+  font-weight: var(--semi-bold);
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+.navigation-small .ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 2rem;
+  margin: 0;
+}
+.navigation-small li a {
+  font-weight: var(--semi-bold);
+  color: var(--black);
+  font-size: 1.375rem;
+  font-weight: var(--bold);
+}
+.navigation-small div {
+  width: 70%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--grey-light);
+}
+.modal {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.modalBg {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+.wrapper {
+  position: relative;
+  z-index: 20;
+  bottom: 5rem;
+  width: 80%;
+  max-width: 25rem;
+}
+
+.noscroll {
+  position: fixed !important;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 4rem 2rem;
+  }
+}

@@ -1,0 +1,13 @@
+.progress-bar {
+  height: 0.75rem;
+  border-radius: 2rem;
+  background-color: #d4d8dd;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.progress-bar > div {
+  border-radius: 2rem;
+  background-color: var(--green-light);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

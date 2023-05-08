@@ -1,13 +1,113 @@
+* {
+  /* outline: 1px solid red; */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none !important;
+}
+html,
+body {
+  overflow-x: hidden !important;
+}
+:root {
+  /* COLORS */
+  --green-light: #3cb4ac;
+  --green-dark: #147b74;
+  --black: #0f1515;
+  --grey-dark: #5a5e5a;
+  --grey-light-paragraph: #7a7a7a;
+  --grey-light: #c4c4c4;
+  --white-dirty: #fafafa;
+  --white: #ffffff;
+  --gradient-burger: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  /* FONT WEIGHTS */
+  --regular: 400;
+  --semi-bold: 500;
+  --bold: 700;
+}
+.card-shadow {
+  background: #d9d9d9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+  background-color: var(--white-dirty);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#modal {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+p,
+li a {
+  font-family: "Commissioner", sans-serif;
+  margin: 0;
+}
+li a {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 1.05;
+  font-size: 1.75rem;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--grey-light-paragraph);
+}
+
+.bold {
+  font-weight: 700;
+}
+.numbers-large {
+  font-weight: 700;
+  letter-spacing: 1.05;
+  font-size: 2rem;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+.not-available {
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  section::-webkit-scrollbar {
+    display: none;
+  }
+  section::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  h1 {
+    font-size: 1.375rem;
+  }
+  p {
+    font-weight: 500;
+    line-height: 1.5;
+  }
 }

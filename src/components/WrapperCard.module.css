@@ -1,0 +1,56 @@
+.wrapper-card {
+  border: 5px solid;
+  border-color: #f0f1e86b;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.small-modal {
+  padding: 1rem;
+}
+.nav-modal {
+  padding: 1rem;
+  width: auto;
+}
+
+.large-modal {
+  padding: 2rem;
+}
+.small-itemCard {
+  padding: 2rem 1.5rem;
+}
+.large-itemCard {
+  padding: 3.5rem 3rem;
+}
+.section_1-modal {
+  padding: 5.5625rem 4rem 2rem;
+}
+.section_2-modal {
+  padding: 3.5rem 3rem 4.875rem;
+}
+.reward-card-home {
+  padding: 2rem 1.375rem;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  border: 2px solid;
+  border-color: var(--grey-light);
+}
+
+@media (max-width: 768px) {
+  .section_1-modal {
+    padding: 4rem 1.5rem 1.5rem;
+  }
+  .section_2-modal {
+    padding: 2rem 1.5rem;
+  }
+  .large-modal {
+    padding: 1rem;
+  }
+
+  .large-itemCard {
+    padding: 2rem 1.5rem;
+  }
+}

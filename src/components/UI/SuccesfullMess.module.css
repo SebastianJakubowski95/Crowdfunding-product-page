@@ -1,0 +1,34 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+  width: 30rem;
+}
+.content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+.wrapper {
+  position: relative;
+  z-index: 1;
+  top: 10rem;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #00000050;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 16.75rem;
+  }
+}

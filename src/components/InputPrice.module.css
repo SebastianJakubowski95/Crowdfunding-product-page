@@ -1,0 +1,44 @@
+.input {
+  padding: 0.55rem 0.5rem;
+  background-color: var(--white);
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 2rem;
+  width: 6.1875rem;
+}
+
+.onBlur {
+  border: 2px solid;
+  border-color: var(--grey-light);
+}
+.onFocus {
+  border: 2px solid;
+  border-color: var(--green-dark);
+}
+
+.dollar {
+  color: var(--grey-light);
+  font-size: 1.25rem;
+  padding-left: 0.8rem;
+}
+
+.priceText {
+  color: var(--black);
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  font-weight: var(--bold);
+  font-family: "Commissioner", sans-serif;
+  width: 80%;
+  border: none;
+}
+.priceText:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
